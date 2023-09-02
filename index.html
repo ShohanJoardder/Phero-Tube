@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHero-tube</title>
+     <!-- Tailwind Css & Daisy UI -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="container mx-auto">
+    <header class="mt-8">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <img src="image/Logo.png" alt="Logo">
+                </div>
+
+                <div class="navbar-center ">
+                  <button onclick="handleSortCategory('1000')" class="btn btn-active">Sort by view</button>
+                </div>
+
+                <div class="navbar-end">
+                  <a href="blog.html" class="btn bg-[#FF1F3D] text-white hover:bg-[#FF1F3D]">Blog</a>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <hr class="border-gray-300">
+            </div>
+        </nav>
+    </header>
+    <main class="mb-40">
+        <!-- Tab -->
+        <div class="tab-container w-full">
+            <div id="tab-list" class="tabs tabs text-center mx-auto flex justify-center gap-6 mt-8">
+                <!-- <a class="btn btn-active px-6">All</a>  -->
+            </div>
+        </div>
+
+        <!-- Category Item -->
+        <section>
+            <!-- Category Container -->
+            <div id="category-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-10 ">
+                
+            </div>
+        </section>
+
+        <!-- Empty Section -->
+        <section class="flex justify-center mt-32">
+            <div id="empty-container" >
+             
+                <div class="flex justify-end bg-slate-950">
+                    <p class="">${cardItem.others?.posted_date}</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Script -->
+    <script src="index.js"></script>
+</body>
+</html>
